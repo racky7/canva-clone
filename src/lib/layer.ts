@@ -36,7 +36,6 @@ export const layerProps = z.discriminatedUnion('type', [rootLayerProps, textLaye
 export type LayerProps = z.infer<typeof layerProps>
 
 export type LayerConfig = {
-  type: LayerType
   icon?: React.ReactElement
   name?: string
   props: LayerProps
